@@ -68,6 +68,6 @@ gr.delete_student('Taylor') # No error!
 
 try:
     for student in range(1, 12):
-        gr.add_student(Student('Female', 20+student, f'Name:{student}', f'Surname:{student}', f'Book:{student}'))
+        gr.add_student(Student('Female', 20+student, f'Name:{student}', f'Surname:{student}', f'AN{student}'))
 except GroupFullException as e:
     print(e)
